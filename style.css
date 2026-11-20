@@ -365,11 +365,11 @@ img {
     background-color: #133024;
 }
 
-/* Contact Section - balanced padding and full-width email cards */
+/* Contact Section - outline cards with white text */
 .contact-box {
     margin-top: 60px;
     background-color: #1b4332;
-    color: #faf9f6;
+    color: #ffffff;
     border-radius: 18px;
     padding: 36px 40px;
     text-align: center;
@@ -380,6 +380,7 @@ img {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 24px;
+    color: #ffffff;
 }
 
 .contact-row {
@@ -392,23 +393,23 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(250, 249, 246, 0.1);
-    border: 1px solid rgba(250, 249, 246, 0.25);
+    background-color: transparent;
+    border: 1.5px solid #ffffff;
     padding: 18px 24px;
     border-radius: 14px;
     text-decoration: none;
-    color: #faf9f6;
+    color: #ffffff;
     transition: background-color 0.2s ease;
 }
 
 .email-card:hover {
-    background-color: rgba(250, 249, 246, 0.18);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .email-label {
     font-size: 12px;
     letter-spacing: 1px;
-    color: #a3c4ac;
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 4px;
 }
@@ -416,6 +417,7 @@ img {
 .email-address {
     font-size: 16px;
     font-weight: 600;
+    color: #ffffff;
 }
 
 /* Footer */
