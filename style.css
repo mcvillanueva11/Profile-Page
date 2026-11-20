@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf9f6;
+    color: #1b2420;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navbar - spans full width with logo far left and links far right */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #faf9f6;
+    border-bottom: 1px solid #e2e6e3;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    color: #1b4332;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1b2420;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #1b4332;
+}
+
+.nav-links .contact-btn {
+    background-color: #1b4332;
+    color: #faf9f6;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 25px;
+}
+
+.nav-links .contact-btn:hover {
+    background-color: #133024;
+    color: #faf9f6;
+}
+
+/* Hero Banner */
+.hero {
+    position: relative;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #faf9f6;
+    background-color: #1b4332;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 67, 50, 0.72);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 19px;
+}
+
+/* Main Page Container */
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px 70px;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.section-heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1b4332;
+    margin-bottom: 22px;
+}
+
+/* About Box */
+.about-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e6e3;
+    border-radius: 18px;
+    padding: 36px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    box-shadow: 0 8px 24px rgba(27, 67, 50, 0.06);
+}
+
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid #e9f1ec;
+    flex-shrink: 0;
+}
+
+.about-info h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.about-info h2 strong {
+    color: #1b4332;
+}
+
+.about-info p {
+    font-size: 16px;
+    color: #52615a;
+}
+
+/* Hobbies */
+.hobbies-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.hobby-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e6e3;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(27, 67, 50, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hobby-card h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 16px 12px;
+}
+
+/* Passion Projects */
+.projects-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e6e3;
+    border-left: 5px solid #1b4332;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 8px 24px rgba(27, 67, 50, 0.06);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Google Sites */
+.sites-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.site-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e6e3;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(27, 67, 50, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.site-card:hover {
+    transform: translateY(-4px);
+}
+
+.site-top-bar {
+    background-color: #e9f1ec;
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2e6e3;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #a3c4ac;
+}
+
+.site-url {
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1b4332;
+}
+
+.site-thumb {
+    position: relative;
+    display: block;
+    height: 240px;
+    overflow: hidden;
+    background-color: #e9f1ec;
+    border-bottom: 1px solid #e2e6e3;
+}
+
+.site-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumb-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 67, 50, 0.75);
+    color: #faf9f6;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.site-thumb:hover img {
+    transform: scale(1.04);
+}
+
+.site-thumb:hover .thumb-hover {
+    opacity: 1;
+}
+
+.site-bottom {
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.site-bottom h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1b4332;
+    margin-bottom: 6px;
+}
+
+.site-bottom p {
+    font-size: 14px;
+    color: #52615a;
+}
+
+.open-btn {
+    flex-shrink: 0;
+    background-color: #1b4332;
+    color: #faf9f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 9px 16px;
+    border-radius: 25px;
+}
+
+.open-btn:hover {
+    background-color: #133024;
+}
+
+/* Contact Section - balanced padding and full-width email cards */
+.contact-box {
+    margin-top: 60px;
+    background-color: #1b4332;
+    color: #faf9f6;
+    border-radius: 18px;
+    padding: 36px 40px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.contact-row {
+    display: flex;
+    gap: 20px;
+}
+
+.email-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(250, 249, 246, 0.1);
+    border: 1px solid rgba(250, 249, 246, 0.25);
+    padding: 18px 24px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #faf9f6;
+    transition: background-color 0.2s ease;
+}
+
+.email-card:hover {
+    background-color: rgba(250, 249, 246, 0.18);
+}
+
+.email-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #a3c4ac;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.email-address {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 28px 20px;
+    color: #52615a;
+    font-size: 14px;
+    border-top: 1px solid #e2e6e3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 850px) {
+    .hobbies-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-row,
+    .sites-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 14px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .contact-box {
+        padding: 28px 20px;
+    }
+
+    .contact-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .hobbies-row {
+        grid-template-columns: 1fr;
+    }
+}
