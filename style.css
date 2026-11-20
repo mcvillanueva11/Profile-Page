@@ -365,13 +365,13 @@ img {
     background-color: #133024;
 }
 
-/* Contact Section - green outline card with green text */
+/* Contact Section - white card with thick green outline and matching green text */
 .contact-box {
     margin-top: 60px;
-    background-color: transparent;
-    border: 2px solid #1b4332;
+    background-color: #ffffff;
+    border: 2.5px solid #1b4332;
     color: #1b4332;
-    border-radius: 18px;
+    border-radius: 22px;
     padding: 36px 40px;
     text-align: center;
 }
